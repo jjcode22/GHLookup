@@ -34,7 +34,7 @@ class GHButton: UIButton {
     //MARK: - Helpers
     private func configure(){
         layer.cornerRadius = 10
-        titleLabel?.textColor = .white
+        setTitleColor(.white, for: .normal)
         //This is how you get dynamic type in iOS
         titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
         translatesAutoresizingMaskIntoConstraints = false
