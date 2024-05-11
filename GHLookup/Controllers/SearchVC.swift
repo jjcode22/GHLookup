@@ -39,7 +39,7 @@ class SearchVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         //called inside viewWillAppear as viewDidLoad is only called once so if pressed back the navigationbar will return after being hidden
-        navigationController?.isNavigationBarHidden = true
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     
@@ -102,7 +102,7 @@ class SearchVC: UIViewController {
 
 extension SearchVC: UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        print(textField.text)
+        print(textField.text ?? "default")
         return true
     }
 }
