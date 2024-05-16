@@ -5,13 +5,15 @@
 //  Created by JJ on 11/05/24.
 //
 
-import Foundation
+import UIKit
 
 class NetworkManager{
     //network manager singleton 1) create a shared object with an instance of singleton class and make it static
     //static keyword makes sure every networkmanager has the shared property. i.e each instance share the same value. They don't have their own copy of the shared property. One shared property is common for all networkmanagers
     static let shared = NetworkManager()
-    let baseURL = "https://api.github.com/users/"
+    private let baseURL = "https://api.github.com/users/"
+    //create an NSCache for caching images to save API calls
+    let cache = NSCache<NSString,UIImage>()
     
     //make the init method private
     private init( ){
@@ -25,7 +27,7 @@ class NetworkManager{
             completion(.failure(.invalidUsername))
             return}
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
-            if let error = error {
+            if let _ = error {
                 completion(.failure(.unableToComplete))
                 return
             }
