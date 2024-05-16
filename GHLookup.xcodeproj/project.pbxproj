@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28AFB3282BF5F86C00EC8DAB /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AFB3272BF5F86C00EC8DAB /* UIHelper.swift */; };
 		28C99ECE2BEEF6E700D1F1D9 /* GHBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C99ECD2BEEF6E700D1F1D9 /* GHBodyLabel.swift */; };
 		28C99ED02BEEF79E00D1F1D9 /* GHAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C99ECF2BEEF79E00D1F1D9 /* GHAlertVC.swift */; };
 		28C99ED22BEEFE3300D1F1D9 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C99ED12BEEFE3300D1F1D9 /* UIViewControllerExtension.swift */; };
@@ -14,6 +15,8 @@
 		28C99EDC2BEF0A5600D1F1D9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C99EDB2BEF0A5600D1F1D9 /* User.swift */; };
 		28C99EE02BEF0F7700D1F1D9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C99EDF2BEF0F7700D1F1D9 /* NetworkManager.swift */; };
 		28C99EE32BEF1D7A00D1F1D9 /* GHError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C99EE22BEF1D7A00D1F1D9 /* GHError.swift */; };
+		28C99EE62BF1CC0600D1F1D9 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C99EE52BF1CC0600D1F1D9 /* FollowerCell.swift */; };
+		28C99EE82BF1CCB600D1F1D9 /* GHAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C99EE72BF1CCB600D1F1D9 /* GHAvatarImageView.swift */; };
 		28FE720B2BEE4A8A000762CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FE720A2BEE4A8A000762CF /* AppDelegate.swift */; };
 		28FE720D2BEE4A8A000762CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FE720C2BEE4A8A000762CF /* SceneDelegate.swift */; };
 		28FE72142BEE4A8D000762CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28FE72132BEE4A8D000762CF /* Assets.xcassets */; };
@@ -27,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28AFB3272BF5F86C00EC8DAB /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		28C99ECD2BEEF6E700D1F1D9 /* GHBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHBodyLabel.swift; sourceTree = "<group>"; };
 		28C99ECF2BEEF79E00D1F1D9 /* GHAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHAlertVC.swift; sourceTree = "<group>"; };
 		28C99ED12BEEFE3300D1F1D9 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -34,6 +38,8 @@
 		28C99EDB2BEF0A5600D1F1D9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		28C99EDF2BEF0F7700D1F1D9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		28C99EE22BEF1D7A00D1F1D9 /* GHError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHError.swift; sourceTree = "<group>"; };
+		28C99EE52BF1CC0600D1F1D9 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
+		28C99EE72BF1CCB600D1F1D9 /* GHAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHAvatarImageView.swift; sourceTree = "<group>"; };
 		28FE72072BEE4A8A000762CF /* GHLookup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHLookup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28FE720A2BEE4A8A000762CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28FE720C2BEE4A8A000762CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,11 +78,13 @@
 		28C99ED42BEF02BC00D1F1D9 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				28C99EE42BF1CBEC00D1F1D9 /* Cells */,
 				28C99ECF2BEEF79E00D1F1D9 /* GHAlertVC.swift */,
 				28FE72222BEE5F2A000762CF /* GHButton.swift */,
 				28FE72282BEE8BD1000762CF /* GHTitleLabel.swift */,
 				28C99ECD2BEEF6E700D1F1D9 /* GHBodyLabel.swift */,
 				28FE72242BEE6453000762CF /* GHTextField.swift */,
+				28C99EE72BF1CCB600D1F1D9 /* GHAvatarImageView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -121,8 +129,17 @@
 			isa = PBXGroup;
 			children = (
 				28C99EE22BEF1D7A00D1F1D9 /* GHError.swift */,
+				28AFB3272BF5F86C00EC8DAB /* UIHelper.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		28C99EE42BF1CBEC00D1F1D9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				28C99EE52BF1CC0600D1F1D9 /* FollowerCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		28FE71FE2BEE4A8A000762CF = {
@@ -231,13 +248,16 @@
 				28FE721F2BEE54AF000762CF /* SearchVC.swift in Sources */,
 				28FE72252BEE6453000762CF /* GHTextField.swift in Sources */,
 				28FE72212BEE5501000762CF /* FavoritesListVC.swift in Sources */,
+				28AFB3282BF5F86C00EC8DAB /* UIHelper.swift in Sources */,
 				28FE72272BEE70F8000762CF /* FollowerListVC.swift in Sources */,
 				28FE720B2BEE4A8A000762CF /* AppDelegate.swift in Sources */,
+				28C99EE62BF1CC0600D1F1D9 /* FollowerCell.swift in Sources */,
 				28C99EE32BEF1D7A00D1F1D9 /* GHError.swift in Sources */,
 				28C99ED02BEEF79E00D1F1D9 /* GHAlertVC.swift in Sources */,
 				28C99EDA2BEF099E00D1F1D9 /* Follower.swift in Sources */,
 				28C99ECE2BEEF6E700D1F1D9 /* GHBodyLabel.swift in Sources */,
 				28C99EE02BEF0F7700D1F1D9 /* NetworkManager.swift in Sources */,
+				28C99EE82BF1CCB600D1F1D9 /* GHAvatarImageView.swift in Sources */,
 				28FE72292BEE8BD1000762CF /* GHTitleLabel.swift in Sources */,
 				28C99ED22BEEFE3300D1F1D9 /* UIViewControllerExtension.swift in Sources */,
 				28FE720D2BEE4A8A000762CF /* SceneDelegate.swift in Sources */,
