@@ -24,6 +24,8 @@ class UserInfoVC: UIViewController {
     let dateLabel = GHBodyLabel(textAlignment: .center)
     var itemViews:[UIView] = []
     
+    weak var delegate: FollowerListVCDelegate!
+    
     //MARK: - lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -131,6 +133,11 @@ extension UserInfoVC: UserInfoVCDelegate{
     func didTapGetFollowers(for user: User) {
         //dismissVC
         //Tell follower list screen the new user
+        guard user.followers != 0 else {
+            presentGHAlertOnMainThread(title: "No followers", message: "This user has no followers 😭", buttonTitle: "Ok")
+            return}
+        delegate.didRequestFollowers(for: user.login)
+        dismissVC()
     }
     
     
