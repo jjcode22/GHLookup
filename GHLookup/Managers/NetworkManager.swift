@@ -54,7 +54,7 @@ class NetworkManager{
     }
     
     func getUserInfo(for username: String , completion: @escaping(Result<User,GHError>) -> Void){
-        let urlString = "\(baseURL)\(username)/followers?per_page=100&page="
+        let urlString = "\(baseURL)\(username)"
         
         guard let url = URL(string: urlString) else {
             completion(.failure(.invalidUsername))
@@ -75,8 +75,8 @@ class NetworkManager{
             do{
                 let decoder = JSONDecoder()
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
-                let followers = try decoder.decode([Follower].self, from: data)
-                completion(.success(followers))
+                let user = try decoder.decode(User.self, from: data)
+                completion(.success(user))
             }catch{
                 completion(.failure(.invalidData))
             }

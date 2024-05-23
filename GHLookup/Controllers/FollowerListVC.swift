@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol FollowerListVCDelegate: AnyObject{
+    func didRequestFollowers(for username:String)
+}
+
 class FollowerListVC: UIViewController {
     //MARK: - properties
     var username: String!
@@ -166,5 +170,17 @@ extension FollowerListVC: UISearchResultsUpdating,UISearchBarDelegate{
         isSearching = false
         updateData(on: followers)
     }
+    
+}
+
+
+//MARK: - FollowerListVCDelegate
+
+extension FollowerListVC: FollowerListVCDelegate{
+    func didRequestFollowers(for username: String) {
+        //get followers for that username
+         
+    }
+    
     
 }
