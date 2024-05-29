@@ -9,7 +9,7 @@ import UIKit
 
 class GHAvatarImageView: UIImageView {
     //MARK: - properties
-    let placeholderImage = UIImage(named: "avatar-placeholder")
+    let placeholderImage = Images.placeholder
     let cache = NetworkManager.shared.cache
     
     //MARK: - lifecycle
