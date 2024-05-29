@@ -14,16 +14,16 @@ class GHBodyLabel: UILabel {
     //MARK: - lifecycle
     override init(frame: CGRect) {
         super.init(frame: frame)
+        configure()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    init(textAlignment: NSTextAlignment ){
-        super.init(frame: .zero)
+    convenience init(textAlignment: NSTextAlignment ){
+        self.init(frame: .zero)
         self.textAlignment = textAlignment
-        configure()
         
     }
     

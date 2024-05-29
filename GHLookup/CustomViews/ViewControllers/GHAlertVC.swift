@@ -9,7 +9,7 @@ import UIKit
 
 class GHAlertVC: UIViewController {
     //MARK: - properties
-    let containerView = UIView()
+    let containerView = GHAlertContainerView()
     let titleLabel = GHTitleLabel(textAlignment: .center, fontSize: 20)
     let messageLabel = GHBodyLabel(textAlignment: .center)
     let actionButton = GHButton(backgroundColor: .systemPink, title: "OK")
@@ -45,11 +45,7 @@ class GHAlertVC: UIViewController {
     
     func configureContainerView(){
         view.addSubview(containerView)
-        containerView.backgroundColor = .systemBackground
-        containerView.layer.cornerRadius =  16
-        containerView.layer.borderWidth = 2
-        containerView.layer.borderColor = UIColor.white.cgColor
-        containerView.translatesAutoresizingMaskIntoConstraints = false
+        
         
         NSLayoutConstraint.activate([
             containerView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
