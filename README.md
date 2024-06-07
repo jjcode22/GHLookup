@@ -13,10 +13,8 @@ Displaying followers in UICollectionView and UICollectionViewDiffableDataSrouce 
 
 
 ## Fast searching and filtering using UICollectionViewDiffableDataSource
-![uuu](https://github.com/jjcode22/GHLookup/assets/108716229/45fa2eb1-2d87-488e-a403-8ff6528691f2)
-
 Follower images are cached locally using NSCache to avoid making repeated network calls.
-
+![uuu](https://github.com/jjcode22/GHLookup/assets/108716229/45fa2eb1-2d87-488e-a403-8ff6528691f2)
 
 ## User can get general github information for a github user.
 ![uuuu](https://github.com/jjcode22/GHLookup/assets/108716229/cd67912c-bd43-44d2-85db-90ce23b2753d)
