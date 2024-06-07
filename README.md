@@ -9,17 +9,21 @@ Displaying followers in UICollectionView and UICollectionViewDiffableDataSrouce 
 ## Features
 
 ##  User can get followers for a github user.
-![uu](https://github.com/jjcode22/UIKITcalc/assets/108716229/09697140-db67-458c-bb76-56f8021fab21)
+![saaa](https://github.com/jjcode22/GHLookup/assets/108716229/3bfa0942-b085-45e9-a822-603342f2e46d)
+
 
 ## Fast searching and filtering using UICollectionView UICollectionViewDiffableDataSource
-![uuu](https://github.com/jjcode22/UIKITcalc/assets/108716229/6daeb27e-5d91-4353-bd41-6cf7aa8b9ac3)
+![uuu](https://github.com/jjcode22/GHLookup/assets/108716229/45fa2eb1-2d87-488e-a403-8ff6528691f2)
+
 
 
 ## User can get general github information for a github user.
-![uuuu](https://github.com/jjcode22/UIKITcalc/assets/108716229/46f665c7-0c7e-4d18-807c-9536e9548a92)
+![uuuu](https://github.com/jjcode22/GHLookup/assets/108716229/cd67912c-bd43-44d2-85db-90ce23b2753d)
+
 
 ## User can favourite/save a user. Favourite user data is persisted using UserDefaults
-![uuuuuu](https://github.com/jjcode22/UIKITcalc/assets/108716229/6bdae1cb-3f04-4b51-bcca-066ee0eca18d)
+![uuuuuu](https://github.com/jjcode22/GHLookup/assets/108716229/463f6c9d-f2ec-48fe-a7a1-d0596ccc77ae)
+
 
 Follower data is cached locally to avoid making repeated network calls.
 Accessibility for older iOS devices i.e iPhone SE and 8 is implemented using conditional rendering.
