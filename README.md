@@ -12,7 +12,7 @@ Displaying followers in UICollectionView and UICollectionViewDiffableDataSrouce 
 ![saaa](https://github.com/jjcode22/GHLookup/assets/108716229/3bfa0942-b085-45e9-a822-603342f2e46d)
 
 
-## Fast searching and filtering using UICollectionView UICollectionViewDiffableDataSource
+## Fast searching and filtering using UICollectionViewDiffableDataSource
 ![uuu](https://github.com/jjcode22/GHLookup/assets/108716229/45fa2eb1-2d87-488e-a403-8ff6528691f2)
 
 
