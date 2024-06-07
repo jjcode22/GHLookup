@@ -15,6 +15,7 @@ Displaying followers in UICollectionView and UICollectionViewDiffableDataSrouce 
 ## Fast searching and filtering using UICollectionViewDiffableDataSource
 ![uuu](https://github.com/jjcode22/GHLookup/assets/108716229/45fa2eb1-2d87-488e-a403-8ff6528691f2)
 
+Follower images are cached locally using NSCache to avoid making repeated network calls.
 
 
 ## User can get general github information for a github user.
@@ -25,7 +26,7 @@ Displaying followers in UICollectionView and UICollectionViewDiffableDataSrouce 
 ![uuuuuu](https://github.com/jjcode22/GHLookup/assets/108716229/463f6c9d-f2ec-48fe-a7a1-d0596ccc77ae)
 
 
-Follower data is cached locally to avoid making repeated network calls.
+Favorited user data is PERSISTEED locally using UserDefaults.
 Accessibility for older iOS devices i.e iPhone SE and 8 is implemented using conditional rendering.
 
 
